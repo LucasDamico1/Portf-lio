@@ -1,6 +1,6 @@
 h1{
     text-align: center; /*Centraliza o texto*/
-    color: teal; /*Aplica a cor laranja*/
+    color:#243645; /*Aplica a cor laranja*/
     font-size: 3rem; /*Altera o Tamanho*/
     margin-bottom: 30px; /*Espaço abaixo do título*/
 }
@@ -10,3 +10,7 @@ h2{
     font-size: 1,5rem;
     margin-bottom: 20px;
 }
+elemento {
+    background-color: #d2baa2 #b69f88;
+  }
+  /*Cores que devem ser utilizadas: #d2baa2, #b69f88, #243645, #000000 e #efece8*/
