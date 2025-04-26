@@ -1,0 +1,12 @@
+h1{
+    text-align: center; /*Centraliza o texto*/
+    color: teal; /*Aplica a cor laranja*/
+    font-size: 3rem; /*Altera o Tamanho*/
+    margin-bottom: 30px; /*Espaço abaixo do título*/
+}
+h2{
+    text-align: left;
+    color: black;
+    font-size: 1,5rem;
+    margin-bottom: 20px;
+}
