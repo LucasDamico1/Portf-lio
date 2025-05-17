@@ -28,7 +28,7 @@ body{
       border-radius: 50%;
       animation: flutuar 5s ease-in-out infinite;
       border-style: outset;
-  }
+      box-shadow: 0 0 20px rgba(0, 131, 238, 0.63);
   .perfil:hover{
     transform: scale(1.03);
   }
