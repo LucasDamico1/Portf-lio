@@ -24,9 +24,10 @@ body{
       width: 400px;
       height: 400px;
       overflow: hidden;
-      position: relative;
+      position: center;
       border-radius: 50%;
       animation: flutuar 5s ease-in-out infinite;
+      border-style: outset;
   }
   .perfil:hover{
     transform: scale(1.03);
@@ -92,7 +93,7 @@ img{
     justify-content: space-around;/*Distribuir o espaçamento de forma linear (igual) entre eles*/
     background: linear-gradient(to right, rgb(86, 165, 179), rgba(6, 176, 199, 0.993) );
     padding: 15px;/*Espaço interno entre os itens do menu*/
-    position: fixed;/*Fixa o menu na tela na sua posição original, no caso horizontal*/
+    position: relative;/*Fixa o menu na tela na sua posição original, no caso horizontal*/
     width: 100%;
     z-index: 1000;/*Garante a sobreposição do menu em relação aos itens da tela*/
 }
@@ -104,4 +105,14 @@ img{
 }
 .icon-menu a:hover{
     transform: scale(1.1);/*Aumenta o tamanho do elemento no nosso caso o link em 10%*/ 
+}
+@keyframes flutuar {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+        animation: flutuar 5s ease-in-out infinite;
+    }
 }
