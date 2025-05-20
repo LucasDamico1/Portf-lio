@@ -29,6 +29,7 @@ body{
       animation: flutuar 5s ease-in-out infinite;
       border-style: outset;
       box-shadow: 0 0 20px rgba(0, 131, 238, 0.63);
+  }
   .perfil:hover{
     transform: scale(1.03);
   }
@@ -106,7 +107,7 @@ img{
 .icon-menu a:hover{
     transform: scale(1.1);/*Aumenta o tamanho do elemento no nosso caso o link em 10%*/ 
 }
-@keyframes flutuar {
+@keyframes flutuar{
     0%,
     100% {
         transform: translateY(0);
@@ -114,5 +115,4 @@ img{
     50% {
         transform: translateY(-20px);
         animation: flutuar 5s ease-in-out infinite;
-    }
-}
+      }
