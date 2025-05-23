@@ -26,7 +26,7 @@ body{
       overflow: hidden;
       position: center;
       border-radius: 50%;
-      animation: flutuar 15s ease-in-out infinite;
+      animation: flutuar 10s ease-in-out infinite;
       border-style: outset;
       box-shadow: 0 0 20px rgba(0, 131, 238, 0.63);
   }
@@ -109,8 +109,11 @@ img{
     transform: scale(1.1);/*Aumenta o tamanho do elemento no nosso caso o link em 10%*/ 
 }
 @keyframes flutuar{
+    0%, 100%{
+        transform: translateY(0);
+        animation: flutuar 5s ease-in-out infinite;
+    }
     50%{
         transform: translateY(-20px);
-        animation: flutuar 5s ease-in-out infinite;
     }
     }
