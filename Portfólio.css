@@ -26,7 +26,7 @@ body{
       overflow: hidden;
       position: center;
       border-radius: 50%;
-      animation: flutuar 5s ease-in-out infinite;
+      animation: flutuar 15s ease-in-out infinite;
       border-style: outset;
       box-shadow: 0 0 20px rgba(0, 131, 238, 0.63);
   }
@@ -52,15 +52,16 @@ body{
     width: 50%;
     height: 40%;
   }
-  .btn-primary{
+  .btn-primary:{
     background-color: #009688;/*Cor de fundo*/
     color: white;/*Cor da Letra*/
     padding: 10px 16px;/*Espaço interno na horizontal e vertical*/
     border-radius: 8px;/*Arredondar as bordas*/
     text-align: center;/*Centralizar o texto*/
     margin-left: 10px;/*Espaço externo entre as bordas do botão e o limite do card*/
+    transition: width 0.5s ease;
 }
-.btn-primary:hover{
+.btn-primary:hover::after{
     transform-style: rgb(0, 128, 122);
     background-color: #1b0096;
     text-decoration: none;
@@ -108,11 +109,8 @@ img{
     transform: scale(1.1);/*Aumenta o tamanho do elemento no nosso caso o link em 10%*/ 
 }
 @keyframes flutuar{
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-    50% {
+    50%{
         transform: translateY(-20px);
         animation: flutuar 5s ease-in-out infinite;
-      }
+    }
+    }
